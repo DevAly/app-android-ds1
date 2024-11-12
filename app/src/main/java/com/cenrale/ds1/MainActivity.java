@@ -29,7 +29,6 @@ public class MainActivity extends AppCompatActivity {
             return insets;
         });
 
-        // Setup clickable "Sign Up" text
         TextView signUpText = findViewById(R.id.signUpText);
         String text = "Don't have an Account? Sign Up";
         SpannableString spannableString = new SpannableString(text);
@@ -37,7 +36,6 @@ public class MainActivity extends AppCompatActivity {
         ClickableSpan clickableSpan = new ClickableSpan() {
             @Override
             public void onClick(View widget) {
-                // Open Sign Up Activity
                 Intent intent = new Intent(MainActivity.this, SignUpActivity.class);
                 startActivity(intent);
             }
